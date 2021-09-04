@@ -1,6 +1,8 @@
 from fastapi import FastAPI
+from core.config import Settings
 
-app = FastAPI(title = "Jobstack", varion="0.1.0")
+
+app = FastAPI(title = Settings.PROJECT_TITLE, version=Settings.PROJECT_VERION)
 
 @app.get("/")
 def hello_api():
