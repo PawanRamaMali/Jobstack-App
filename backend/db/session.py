@@ -19,7 +19,7 @@ engine = create_engine(
 
 SessionLocal = sessionmaker(autocommit=False,autoflush=False,bind=engine)
 
-def get_db() -> Generator:   #new
+def get_db() -> Generator:   # for dependency injection
     try:
         db = SessionLocal()
         yield db

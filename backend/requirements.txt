@@ -1,15 +1,21 @@
 fastapi
 uvicorn
 
-#for template
+# for template
 jinja2
 
-#for static files
+# for static files
 aiofiles
 
-#for database   #new
+# for database   #new
 sqlalchemy         
 psycopg2
 
-#for loading environment variables  #new
+# for loading environment variables  #new
 python-dotenv
+
+# for email validation
+pydantic[email]
+
+# hashing
+passlib[bcrypt]
