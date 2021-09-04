@@ -2,6 +2,12 @@
 
 # Requirements
 
+Install the requirements 
+
+```
+pip install -r requirements.txt
+```
+
 requirements.txt
 ```
 fastapi
